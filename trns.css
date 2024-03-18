@@ -34,7 +34,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    column-gap: 120px;
+    row-gap: 30px;
 }
 .card {
     text-align: center;
@@ -47,7 +48,7 @@
 
 @media (max-width:767px) {
     .card {
-        flex-basis: 90%;
+        flex-basis: 80%;
         flex-direction: column;
     }
     .title h1 {
@@ -70,8 +71,9 @@
 }
 .card img {
     width: 98%;
-    height: 300px;
+    height: 250px;
     border-radius: 20px;
+    object-fit: cover;
 }
 .card p {
     margin-bottom: 20px;
@@ -96,6 +98,9 @@
 }
 .skew:hover {
     transform: skew(-30deg, -10deg);
+}
+.matrix:hover {
+    transform: matrix(1.2, 0.655, 0, 1.2, 100, 60);
 }
 
 body {
@@ -147,3 +152,12 @@ body {
         background-position: 0% 50%;
     } */
 /* } */
+.search {
+    width: 400px;
+    height: 50px;
+    margin: 30px auto;
+}
+button {
+    width: 50px;
+
+}
